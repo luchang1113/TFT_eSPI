@@ -137,7 +137,7 @@
 #endif
 
 #if CONFIG_TFT_RST == -1
-    #error "Invalid Reset pin. Check TFT_eSPI configuration"
+    //#error "Invalid Reset pin. Check TFT_eSPI configuration"
 #else
     #define TFT_RST         CONFIG_TFT_RST
 #endif
@@ -224,7 +224,7 @@
 // SPI BUS
 #else
     #if CONFIG_TFT_MISO == -1
-        #error "Invalid MISO pin. Check TFT_eSPI configuration"
+        //#error "Invalid MISO pin. Check TFT_eSPI configuration"
     #else
         #define TFT_MISO      CONFIG_TFT_MISO
     #endif
